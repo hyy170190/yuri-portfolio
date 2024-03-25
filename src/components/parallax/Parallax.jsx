@@ -29,7 +29,7 @@ const Parallax = ({ type }) => {
       </motion.h1>
       <motion.div
         className="mountains"
-        style={{ backgroundImage: url("./river.png") }}
+        style={{ backgroundImage: 'url("./river.png")' }}
       ></motion.div>
       <motion.div
         className="planets"
@@ -41,7 +41,7 @@ const Parallax = ({ type }) => {
         }}
       ></motion.div>
       <motion.div
-        style={{ x: yBg, backgroundImage: url("./stars.png") }}
+        style={{ x: yBg, backgroundImage: 'url("./stars.png")' }}
         className="stars"
       ></motion.div>
     </div>
