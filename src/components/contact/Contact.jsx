@@ -32,12 +32,18 @@ const Contact = () => {
     var link = document.createElement("a");
     link.setAttribute(
       "href",
-      "https://github.com/hyy170190/portfolio-react-js/blob/starter/public/Job_Resume_9.pdf"
+      "https://hyy170190.github.io/portfolio-react-js/public/YokHuiYing_Resume.pdf"
     ); // Replace with the URL of your PDF file hosted on GitHub Pages
-    link.setAttribute("download", "test.pdf"); // Replace 'filename.pdf' with the desired filename
+    link.setAttribute("download", "YokHuiYIng_Resume.pdf"); // Replace 'filename.pdf' with the desired filename
 
-    // Trigger the click event on the anchor element
+    // Append the anchor element to the document body
+    document.body.appendChild(link);
+
+    // Simulate a click event on the anchor element to trigger the download
     link.click();
+
+    // Remove the anchor element from the document body after the download
+    document.body.removeChild(link);
   };
 
   // const sendEmail = (e) => {
