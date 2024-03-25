@@ -18,14 +18,14 @@ const Parallax = ({ type }) => {
       className="parallax"
       ref={ref}
       style={{
-        background:
-          type === "services"
-            ? "linear-gradient(180deg, #111132, #0c0c1d)"
-            : "linear-gradient(180deg, #111132, #505064)",
+        background: "linear-gradient(180deg, #29251d, #2f3774)",
+        // type === "services"
+        //   ? "linear-gradient(180deg, #29251d, #2f3774)"
+        //   : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What We Do?" : "What We Did?"}
+        {type === "services" ? "Skills" : "Portfolio"}
       </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
@@ -33,7 +33,7 @@ const Parallax = ({ type }) => {
         style={{
           y: yBg,
           backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
+            type === "services" ? "/moon.png" : "/moon.png"
           })`,
         }}
       ></motion.div>

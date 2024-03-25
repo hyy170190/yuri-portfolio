@@ -31,8 +31,8 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
-      duration: 20,
+      repeatType: "mirror",
+      duration: 15,
     },
   },
 };
@@ -47,16 +47,20 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web developer and UI designer
-          </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
+          <motion.h2 variants={textVariants}>Yok Hui Ying</motion.h2>
+          <motion.h1 variants={textVariants}>Software Engineer</motion.h1>
+          {/* <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
               See the Latest Works
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div>
+          </motion.div> */}
+          <motion.p variants={textVariants}>
+            A software engineering fresh graduate seeking a Software Tester/QA
+            position to utilize my software engineering background and hands-on
+            experience in software testing to ensure product quality and
+            contribute to team success.
+          </motion.p>
           <motion.img
             variants={textVariants}
             animate="scrollButton"
@@ -71,10 +75,10 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Writer Content Creator Influencer
+        Hello World !
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/yuri.png" alt="" />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 @import "../../app.scss";
 .services {
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: linear-gradient(180deg, #29251d, #2f3774);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 
     @include mobile {
       width: 100%;
@@ -100,6 +101,7 @@
     display: flex;
     max-width: 1366px;
     margin: auto;
+    margin-bottom: 40px;
 
     @include mobile {
       flex-direction: column;
@@ -107,11 +109,13 @@
     }
 
     .box {
+      height: 325px;
+      width: 325px;
       padding: 50px;
-      border: 0.5px solid gray;
+      border: 0.5px solid #7ea4b0;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: start;
 
       @include mobile {
         border: none;

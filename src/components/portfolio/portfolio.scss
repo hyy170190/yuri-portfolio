@@ -2,6 +2,7 @@
 
 .portfolio {
   position: relative;
+  background: linear-gradient(180deg, #29251d, #2f3774);
 
   .progress {
     position: sticky;
@@ -9,7 +10,7 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color: #cdd27e;
     font-size: 36px;
 
     @include mobile {
@@ -78,7 +79,8 @@
         }
 
         h2 {
-          font-size: 72px;
+          font-size: 48px;
+          color: #cdd27e;
 
           @include mobile {
             font-size: 36px;
@@ -86,7 +88,7 @@
         }
 
         p {
-          color: gray;
+          color: white;
           font-size: 20px;
 
           @include mobile {

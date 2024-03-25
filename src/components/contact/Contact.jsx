@@ -26,25 +26,39 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // Function to trigger the download
+  const downloadPDF = () => {
+    // Create an anchor element
+    var link = document.createElement("a");
+    link.setAttribute(
+      "href",
+      "https://github.com/hyy170190/portfolio-react-js/blob/starter/public/Job_Resume_9.pdf"
+    ); // Replace with the URL of your PDF file hosted on GitHub Pages
+    link.setAttribute("download", "test.pdf"); // Replace 'filename.pdf' with the desired filename
 
-    emailjs
-      .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
-        formRef.current,
-        "pX_2hasGmGcuvjXIW"
-      )
-      .then(
-        (result) => {
-          setSuccess(true)
-        },
-        (error) => {
-          setError(true);
-        }
-      );
+    // Trigger the click event on the anchor element
+    link.click();
   };
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_94y20xo",
+  //       "template_v10u2oh",
+  //       formRef.current,
+  //       "pX_2hasGmGcuvjXIW"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         setSuccess(true);
+  //       },
+  //       (error) => {
+  //         setError(true);
+  //       }
+  //     );
+  // };
 
   return (
     <motion.div
@@ -58,15 +72,28 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>huiyingyok@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
+          <span>Semenyih, Selangor.</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>0136853001</span>
+        </motion.div>
+        <motion.div className="item" variants={variants}>
+          <h2>GitHub</h2>
+          <span>
+            <a
+              href="https://github.com/hyy170190"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "underline" }}
+            >
+              https://github.com/hyy170190
+            </a>
+          </span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -99,7 +126,31 @@ const Contact = () => {
             />
           </svg>
         </motion.div>
-        <motion.form
+        <motion.div
+          className="workExp"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 4, duration: 1 }}
+        >
+          <h1>Working Experiences</h1>
+          <br />
+          <hr />
+          <br />
+          <p>
+            <ul>
+              <li>
+                IT Business Analyst • 10/2021 - 12/2021 • Agtiv Consulting Sdn
+                Bhd
+              </li>
+              <li>Teaching Assistant • 01/2019 - 12/2019 • SMJK Chi Wen</li>
+            </ul>
+          </p>
+          <br />
+          <div>
+            <button onClick={downloadPDF}>Download Resume</button>
+          </div>
+        </motion.div>
+        {/* <motion.form
           ref={formRef}
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
@@ -112,7 +163,7 @@ const Contact = () => {
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}
-        </motion.form>
+        </motion.form> */}
       </div>
     </motion.div>
   );
