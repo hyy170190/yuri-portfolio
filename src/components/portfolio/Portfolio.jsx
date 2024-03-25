@@ -12,19 +12,19 @@ const items = [
   {
     id: 1,
     title: "Flood Relief Goods Donation Web App",
-    img: "./yuri-portfolio/donation app.jpg",
+    img: "./donation app.jpg",
     desc: "Build in Laravel framework. Donors, whether individuals or NGOs, can view specific requirements posted by the evacuation center staff and contribute essential items like food, clothing, and medicine.",
   },
   {
     id: 2,
     title: "Online Grocery Shopping Mobile App",
-    img: "./yuri-portfolio/grocery app.png",
+    img: "./grocery app.png",
     desc: "Built in React Native, with features including user profile, shopping cart, order, etc.",
   },
   {
     id: 3,
     title: "Automation Testing on Food Ordering System",
-    img: "./yuri-portfolio/testing.png",
+    img: "./testing.png",
     desc: (
       <p>
         Build in Java for the automation testing practicing purpose. Click{" "}

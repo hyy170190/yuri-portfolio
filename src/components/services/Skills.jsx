@@ -43,7 +43,7 @@ const Skills = () => {
       </motion.div> */}
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="./yuri-portfolio/books.jpg" alt="" />
+          <img src="./books.jpg" alt="" />
           <h1>
             <motion.b whileHover={{ color: "#cdd27e" }}>Learn</motion.b> As
           </h1>

@@ -30,8 +30,8 @@ const Contact = () => {
   const downloadPDF = () => {
     // Create an anchor element
     var link = document.createElement("a");
-    link.setAttribute("href", "./yuri-portfolio/YokHuiYing_Resume.pdf"); // Replace with the URL of your PDF file hosted on GitHub Pages
-    link.setAttribute("download", "YokHuiYIng_Resume.pdf"); // Replace 'filename.pdf' with the desired filename
+    link.setAttribute("href", "./YokHuiYing_Resume.pdf"); // Replace with the URL of your PDF file hosted on GitHub Pages
+    link.setAttribute("download", "YokHuiYing_Resume.pdf"); // Replace 'filename.pdf' with the desired filename
 
     // Append the anchor element to the document body
     document.body.appendChild(link);
