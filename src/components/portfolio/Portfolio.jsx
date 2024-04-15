@@ -14,31 +14,22 @@ const items = [
     title: "Flood Relief Goods Donation Web App",
     img: "./donation app.jpg",
     desc: "Build in Laravel framework. Donors, whether individuals or NGOs, can view specific requirements posted by the evacuation center staff and contribute essential items like food, clothing, and medicine.",
+    demoLink:
+      "https://hyystaticsite.my.canva.site/flood-donation-web-application",
   },
   {
     id: 2,
     title: "Online Grocery Shopping Mobile App",
     img: "./grocery app.png",
     desc: "Built in React Native, with features including user profile, shopping cart, order, etc.",
+    demoLink: "https://hyystaticsite.my.canva.site/groceryshop",
   },
   {
     id: 3,
     title: "Automation Testing on Food Ordering System",
     img: "./testing.png",
-    desc: (
-      <p>
-        Build in Java for the automation testing practicing purpose. Click{" "}
-        <a
-          href="https://github.com/hyy170190/kiah-ordering"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: "underline" }}
-        >
-          here
-        </a>{" "}
-        for more details.
-      </p>
-    ),
+    desc: "Build in Java for the automation testing practicing purpose.",
+    demoLink: "https://github.com/hyy170190/kiah-ordering",
   },
 ];
 
@@ -61,7 +52,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            {/* <button>See Demo</button> */}
+            <a href={item.demoLink} target="_blank" rel="noopener noreferrer">
+              <button>See Details</button>
+            </a>
           </motion.div>
         </div>
       </div>
